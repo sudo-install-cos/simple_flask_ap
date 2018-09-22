@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div class="row justify-content-md-center">
+        <form class="form-inline align-self-center" method="POST" action="/convert">
+            <label class="sr-only" for="amountInput">amount</label>
+            <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">$</div>
+              </div>
+              <input type="text" class="form-control" id="amountInput" placeholder="Amount in dollars" name="amount">
+            </div>
+            <button type="submit" class="btn btn-succes mb-2">Convert</button>
+        </form>
+    </div>
+{% endblock %}
+
